@@ -45,9 +45,10 @@
     </style>
 </head>
 <body>
+    {% include 'header.html' %}
     <div class="container">
         <h1>Caesar Cipher</h1>
-        <form method="POST" action="/ceaser">
+        <form method="POST" action="/caesar">
             <div class="form-group">
                 <label for="text">Enter Text:</label>
                 <textarea name="text" id="text" required></textarea>

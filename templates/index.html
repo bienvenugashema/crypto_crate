@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Crate - Home</title>
+    <style>
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .cipher-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .jumbotron {
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            background-color: #e9ecef;
+            border-radius: .3rem;
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Crypto Crate</h1>
+            <p class="lead">Explore classical cryptography methods and modern encoding techniques.</p>
+            <hr class="my-4">
+            <p>Select a cipher from below to get started with encryption and decryption.</p>
+        </div>
+
+        <div class="cipher-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Caesar Cipher</h5>
+                    <p class="card-text">A simple substitution cipher that shifts letters by a fixed number of positions.</p>
+                    <a href="/caesar" class="btn btn-primary">Try Caesar</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vigenère Cipher</h5>
+                    <p class="card-text">A polyalphabetic substitution cipher using a keyword to shift letters.</p>
+                    <a href="/vigenere" class="btn btn-primary">Try Vigenère</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">XOR Encrpte/Decrypt</h5>
+                    <p class="card-text">Try this xor tool, may be some people my take it as easier but on its self is stronger.</p>
+                    <a href="/xor" class="btn btn-primary">Try XOR</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Base64 Encoding</h5>
+                    <p class="card-text">Convert text to Base64 format and decode Base64 strings.</p>
+                    <a href="/base64" class="btn btn-primary">Try Base64</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Playfair Cipher</h5>
+                    <p class="card-text">A digraph substitution cipher using a key square for encryption.</p>
+                    <a href="/playfair" class="btn btn-primary">Try Playfair</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Hill Cipher</h5>
+                    <p class="card-text">A polygraphic substitution cipher based on linear algebra.</p>
+                    <a href="/hill" class="btn btn-primary">Try Hill</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Rail Fence Cipher</h5>
+                    <p class="card-text">A transposition cipher that arranges text in a zigzag pattern.</p>
+                    <a href="/rail-fence" class="btn btn-primary">Try Rail Fence</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4 mb-4">
+        <p>Created with ❤️ by Crypto Crate Team</p>
+    </footer>
+</body>
+</html>
