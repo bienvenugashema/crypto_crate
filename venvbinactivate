@@ -1,0 +1,33 @@
+Script started on 2025-05-09 19:47:52+02:00 [TERM="xterm-256color" TTY="/dev/pts/38" COLUMNS="48" LINES="26"]
+[?2004h[0;32m~/crypto_crate[0m [0;97m$[0m ls
+[?2004lapp.py   requirements.txt  [0m[01;34mvenv[0m
+[01;34mciphers[0m  [01;34mtemplates[0m         venvbinactivate
+[?2004h[0;32m~/crypto_crate[0m [0;97m$[0m source venv\bin/[K\activare[K[Kte
+[?2004l[?2004h[0;32m~/crypto_crate[0m [0;97m$[0m python spp.[K[K[K[Kapp.py 
+[?2004lTraceback (most recent call last):
+  File "/data/data/com.termux/files/home/crypto_crate/app.py", line 1, in <module>
+    from flask import Flask, render_template, request
+ModuleNotFoundError: No module named 'flask'
+[?2004h[0;32m~/crypto_crate[0m [0;97m$[0m pip install flask
+[?2004lCollecting flask
+  Using cached flask-3.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting Werkzeug>=3.1 (from flask)
+  Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting Jinja2>=3.1.2 (from flask)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting itsdangerous>=2.2 (from flask)
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.1.3 (from flask)
+  Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting blinker>=1.9 (from flask)
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask)
+  Using cached markupsafe-3.0.2-cp312-cp312-linux_aarch64.whl
+Using cached flask-3.1.0-py3-none-any.whl (102 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Installing collected packages: MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, flask
+[?25l[2K   [38;2;249;38;114m━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━[0m [32m1/7[0m [itsdangerous][2K   [38;2;249;38;114m━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2/7[0m [click][2K   [38;2;249;38;114m━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2/7[0m [click][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━[0m [32m4/7[0m [Werkzeug][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━[0m [32m4/7[0m [Werkzeug][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━[0m [32m4/7[0m [Werkzeug][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━[0m [32m4/7[0m [Werkzeug][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━[0m [32m4/7[0m [Werkzeug][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━[0m [32m4/7[0m [Werkzeug][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━[0m [32m5/7[0m [Jinja2][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━[0m [32m5/7[0m [Jinja2][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━[0m [32m5/7[0m [Jinja2][2K   [38;2;249;38;114m━━━━�
