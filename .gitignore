@@ -1,0 +1,5 @@
+venv
+
+ciphers/dictionary.txt
+__pycache__/
+*.pyc

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        select, input[type="number"] {
+            padding: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="container">
+        <h1>Caesar Cipher</h1>
+        <form method="POST" action="/caesar">
+            <div class="form-group">
+                <label for="text">Enter Text:</label>
+                <textarea name="text" id="text" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="shift">Shift Amount (1-25):</label>
+                <input type="number" name="shift" id="shift" min="1" max="25" value="3" required>
+            </div>
+            <div class="form-group">
+                <label for="mode">Mode:</label>
+                <select name="mode" id="mode">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select>
+            </div>
+            <button type="submit">Process</button>
+        </form>
+        
+        {% if result %}
+        <div class="form-group">
+            <h3>Result:</h3>
+            <textarea readonly>{{ result }}</textarea>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
