@@ -26,7 +26,12 @@ def base64():
 
         result = base64_template.base64_tool(text, mode)
     return render_template("base64.html", result=result)
-
+@app.route("/register", methods=['POST', 'GRT'])
+def register():
+   if methods.request == "post":
+      email = request.form['email']
+      password = request.form['password']
+      print(f"Email is {email}, Password is {password}")
 
 @app.route("/xor", methods=["POST", "GET"])
 def xor_tool():
